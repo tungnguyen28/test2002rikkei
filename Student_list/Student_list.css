@@ -1,0 +1,32 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    
+}
+
+form{
+    border: 1px solid grey;
+    width: 500px;
+    margin: 0px auto;
+    padding: 10px;
+
+}
+
+form h3{
+    text-align: center;
+}
+
+.formInput{
+    display: flex;
+}
+
+.formInput li{
+    height: 20px;
+    margin: 5px 0px;
+}
+
+.formInput button{
+    justify-content: center;
+}

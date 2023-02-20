@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sinh viên</title>
+    <link rel="stylesheet" href="./Student_list.css">
+</head>
+
+<body>
+    <form>
+        <h3>Form nhập thông tin</h3>
+        <div class="formInput">
+            <ul>
+                <li>Họ Và Tên:</li>
+                <li>Email:</li>
+                <li>Số điện thoại:</li>
+                <li>Địa chỉ:</li>
+                <li>Giới tính:</li>
+            </ul>
+            <ul>
+                <li><input type="text" name="studentName" id="studentName" placeholder="Vui lòng nhập tên" required/></li>
+                <li><input type="mail" name="studentMail" id="studentMail" placeholder="Vui lòng nhập Email" required/></li>
+                <li><input type="tel" name="studentTel" id="studentTel" placeholder="Vui lòng số điện thoại" required/></li>
+                <li><input type="text" name="studentAddress" id="studentAddress" placeholder="Vui lòng địa chỉ" required/></li>
+                <li><input type="radio" id="studentSex" value=true>
+                    <label>Nam</label>
+                    <input type="radio" id="studentSex" value=false>
+                    <label>Nữ</label><br></li>
+            </ul>
+        </div>
+
+        <button id="btnCreate">Lưu lại</button>
+    </form>
+    <div>
+        <h3> Danh sách sinh viên </h3>
+        <table border="1">
+    
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Họ tên</th>
+                    <th>Email</th>
+                    <th>Điện thoại</th>
+                    <th>Địa chỉ</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+    
+            </tbody>
+        </table>
+    </div>
+
+<script src="./listStudent.js"></script>
+</body>
+
+</html>
